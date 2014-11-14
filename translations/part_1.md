@@ -1,9 +1,9 @@
 ###Neural Networks Demystified
-####Part 1: Data and Architecture
+####Часть 1: Данные и архитектура
 
-[1] Let’s say you want to predict some output value y, given some input value X. For example, maybe you want to predict your score on a test based on how many hours you sleep and how many hours you study the night before. To use a machine learning approach, we first need some data. Let’s say for the last three tests, you recorded your number of hours of studying, your number of hours sleeping, and your score on the test. We'll use the programming language python to store our data in 2-dimensional numpy arrays.
+[1] Пусть мы хотим спрогнозировать некоторый вывод y при заданном вводе X. Например, вы хотите спрогнозировать свой результат контрольной, в зависимости от того, сколько часов вы спите и учитесь за ночь до контрольной. Для подхода машинного обучения нам нужны некоторые данные. Допустим у вас есть данные за последние три теста (вы записали то, сколько времени вы спали и сколько учились и ваш результат). Мы будем использовать язык программирования Python для того, чтобы разместить данные в двухмерном массиве библиотеки numpy.
  
-[2] Now that we have some data, we’re going to use it to train a model to predict how you will do on your next test, based on how many hours you sleep and how many hours you study. This is called a supervised regression problem. It’s supervised because our examples have inputs and outputs. It’s a regression problem because we’re predicting your test score, which is a continuous output. If we we’re predicting your letter grade, this would be called a classification problem, and not a regression problem.
+[2] Теперь у нас есть некоторые данные, и мы собираемся тренировать модель для того, чтобы спрогнозировать то, насколько хорошо вы себя покажите на контрольной в зависимости от того, сколько часов вы спите и учитесь. Это называется регрессионная задача обучения с учителем. Это обучение с учителем, поскольку у нас есть примеры с вводом и выводом. Это регрессионная задача, потому что нам нужно спрогнозировать результат, который является произвольным значением. Если мы будем прогнозировать оценку, то это будет задача классификации, а не регрессионая задача.
 
 [3] There are an overwhelming number of models within machine learning, here we’re going to use a particularly interesting one called an artificial neural network. These guys are loosely based on how the neurons in your brain work, and have been particularly successful recently at solving really big, really hard problems.
 
