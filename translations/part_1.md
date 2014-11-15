@@ -1,11 +1,12 @@
 ###Neural Networks Demystified
 ####Часть 1: Данные и архитектура
 
+<<<<<<< Updated upstream
 [1] Пусть мы хотим спрогнозировать некоторый вывод y при заданном вводе X. Например, вы хотите спрогнозировать свой результат контрольной, в зависимости от того, сколько часов вы спите и учитесь за ночь до контрольной. Для подхода машинного обучения нам нужны некоторые данные. Допустим у вас есть данные за последние три теста (вы записали то, сколько времени вы спали и сколько учились и ваш результат). Мы будем использовать язык программирования Python для того, чтобы разместить данные в двухмерном массиве библиотеки numpy.
  
 [2] Теперь у нас есть некоторые данные, и мы собираемся тренировать модель для того, чтобы спрогнозировать то, насколько хорошо вы себя покажите на контрольной в зависимости от того, сколько часов вы спите и учитесь. Это называется регрессионная задача обучения с учителем. Это обучение с учителем, поскольку у нас есть примеры с вводом и выводом. Это регрессионная задача, потому что нам нужно спрогнозировать результат, который является произвольным значением. Если мы будем прогнозировать оценку, то это будет задача классификации, а не регрессионая задача.
 
-[3] There are an overwhelming number of models within machine learning, here we’re going to use a particularly interesting one called an artificial neural network. These guys are loosely based on how the neurons in your brain work, and have been particularly successful recently at solving really big, really hard problems.
+[3] Есть огромное количество моделей машинного обучения, но здесь нам будет особенно интересна одна из них, называемая искусственной нейронной сетью. Она работает по такому же принципу как и нейроны в твоём мозге, и в последнее время она особенно успешна для решения реально больших и трудных проблем.
 
 [4] Before we throw our data into the model, we need to account for the differences in the units of our data. Both of our inputs are in hours, but our output is a test score, scaled between 0 and 100. Neural networks are smart, but not smart enough to guess the units of our data. It’s kind of like asking our model to compare apples to oranges, where most learning models really only want to compare apples to apples. The solution is to scale our data, this way our model only sees standardized units. Here, we're going to take advantage of the fact that all of our data is positive, and simply divide by the maximum value for each variable, effectively scaling the result between 0 and 1.
 
